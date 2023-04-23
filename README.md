@@ -24,25 +24,41 @@ Program to implement the given logic function and to verify its operations in qu
 PROGRAM 1:
 
 module exp;
+
 input a,b,c,d;
+
 output f1,f2,f3;
+
 assign f1=(~c&~b&~a);
+
 assign f2=(~d&~c&~a);
+
 assign f3=(c&~(~b)&~a);
+
 assign f=f1&~f2&~f3;
+
 endmodule
 
 PROGRAM 2:
 
 module expfourtwo(a,b,c,d,f);
+
 input a,b,c,d;
+
 output f;
+
 wire f1,f2,f3,f4;
+
 assign f1=c&(~b)&a;
+
 assign f2=d&(~c)&a;
+
 assign f3=c&(~b)&a;
+
 assign f4=~(f1|f2|f3);
+
 not(f,f4);
+
 endmodule
 
 
