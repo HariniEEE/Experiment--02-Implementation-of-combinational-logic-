@@ -28,7 +28,6 @@ Program to implement the given logic function using NAND and NOR gates and to ve
 
 
 
-
 ## Procedure
 ## Program:
 /*
@@ -36,11 +35,13 @@ Program to implement the given logic function and to verify its operations in qu
 
 PROGRAM 1:
 
-module exp;
+module exp(a,b,c,d,f);
 
 input a,b,c,d;
 
-output f1,f2,f3;
+output f;
+
+wire f1,f2,f3;
 
 assign f1=(~c&~b&~a);
 
